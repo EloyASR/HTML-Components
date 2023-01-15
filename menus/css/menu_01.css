@@ -1,0 +1,172 @@
+:root{
+
+    --black100: #7f8082;
+    --black200: #626363;
+    --black300: #343434;
+
+    --blue100: #5383E8;
+    --blue200: #3b66c3;
+    --blue300: #28344E;
+
+    --red100: #E84057;
+    --red200: #c23749;
+    --red300: #59343B;
+
+    --green100:#50d73b;
+    --green200:#37c245;
+    --green300:#365934;
+
+    --yellow100: #e8c940;
+    --yellow200: #c3aa3b;
+    --yellow300: #595234;
+
+    --orange100:#e88c53;
+    --orange200:#c3713b;
+    --orange300:#4e3928;
+
+    --purple100:#b953e8;
+    --purple200:#a13bc3;
+    --purple300:#45284e;
+
+    --grey100: #ffffff;
+    --grey200: #b8b8cf;
+
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu{
+    display:grid;
+    grid-auto-columns: minmax(33.33%,1fr);
+    grid-auto-flow: column;
+    height: 50px;
+    width: 100%;
+}
+
+/** Item con solo texto*/
+.menu > .item {
+    background-color: var(--black100);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap:nowrap;
+
+    border-left: 1px solid var(--black200);
+    border-right: 1px solid var(--black200);
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/** Item con solo texto hover*/
+.menu > .item:hover{
+    background-color: var(--black300);
+}
+
+/** Primer item */
+.menu > .first{
+    border-left: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.menu > .item > .icon {
+    padding: 5px;
+    width: 32px;
+}
+
+.menu > .item > .icon > img{
+    padding: 5px;
+    width: 24px;
+}
+
+.menu > .item > .text{
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    color: var(--grey100);
+}
+
+@media (max-width: 450px){
+    .none > .item > .text{
+        display:none;
+    }
+}
+
+/** Segundo item*/
+.menu > .last{
+    border-right: none;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.blue > .item{
+    background-color: var(--blue100);
+    border-left: 1px solid var(--blue200);
+    border-right: 1px solid var(--blue200);
+}
+
+.blue > .item:hover{
+    background-color: var(--blue300);
+}
+
+.red > .item{
+    background-color: var(--red100);
+    border-left: 1px solid var(--red200);
+    border-right: 1px solid var(--red200);
+}
+
+.red > .item:hover{
+    background-color: var(--red300);
+}
+
+.green > .item{
+    background-color: var(--green100);
+    border-left: 1px solid var(--green200);
+    border-right: 1px solid var(--green200);
+}
+
+.green > .item:hover{
+    background-color: var(--green300);
+}
+
+.yellow > .item{
+    background-color: var(--yellow100);
+    border-left: 1px solid var(--yellow200);
+    border-right: 1px solid var(--yellow200);
+}
+
+.yellow > .item:hover{
+    background-color: var(--yellow300);
+}
+
+.orange > .item{
+    background-color: var(--orange100);
+    border-left: 1px solid var(--orange200);
+    border-right: 1px solid var(--orange200);
+}
+
+.orange > .item:hover{
+    background-color: var(--orange300);
+}
+
+.purple > .item{
+    background-color: var(--purple100);
+    border-left: 1px solid var(--purple200);
+    border-right: 1px solid var(--purple200);
+}
+
+.purple > .item:hover{
+    background-color: var(--purple300);
+}
+
