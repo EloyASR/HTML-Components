@@ -55,7 +55,7 @@ body{
 }
 
 .partida > .data > .game_info{
-    margin: 5px;
+    margin: 5px 2vw 5px 5px;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
@@ -64,6 +64,7 @@ body{
 
 .partida > .data > .game_info > .type{
     font-weight: bold;
+    font-size: 0.9rem;
     color: var(--grey100);
     margin: 3px;
 }
@@ -79,6 +80,7 @@ body{
     color: var(--grey200);
     font-size: 0.85rem;
     margin: 3px;
+    font-weight: bold;
 }
 
 .partida > .data > .game_info > .duration{
@@ -88,11 +90,12 @@ body{
 }
 
 .partida > .data > .summoner_info{
-    margin: 5px;
+    margin: 5px auto 5px 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    
 }
 
 .partida > .data > .summoner_info > .summoner{
@@ -184,6 +187,52 @@ body{
     border-radius: 50%;
 }
 
+.partida > .data > .summoner_info > .summoner > .kda{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.partida > .data > .summoner_info > .summoner > .kda > .k-d-a{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey200);
+}
+
+.partida > .data > .summoner_info > .summoner > .kda > .k-d-a > .k{
+    margin:5px;
+    font-weight: bold;
+    color: var(--grey100);
+}
+
+.partida > .data > .summoner_info > .summoner > .kda > .k-d-a > .d{
+    margin:5px;
+    font-weight: bold;
+    color: var(--black100);
+}
+
+.partida > .data > .summoner_info > .summoner > .kda > .k-d-a > .a{
+    margin:5px;
+    font-weight: bold;
+    color: var(--grey100);
+}
+
+.partida > .data > .summoner_info > .summoner > .kda > .ratio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--grey200);
+}
+
+.partida > .data > .summoner_info > .summoner > .kda > .ratio > span{
+    margin-right: 5px;
+}
+
 .partida > .data > .summoner_info > .items{
     display: flex;
     flex-direction: row;
@@ -195,10 +244,55 @@ body{
 .partida > .data > .summoner_info > .items > img{
     width: 20px;
     height: 20px;
-    margin: 3px;
+    margin: 2px;
     background-color: black;
     border: 1px solid var(--black200);
     border-radius: 5px;
+}
+
+.partida > .data > .summoner_info > .items > .ward{
+    border-radius: 50%;
+}
+
+.partida > .data > .players_info{
+    border-left: 1px solid var(--black100);
+    padding: 0px 3vw 0px 3vw ;
+    margin:8px 0px 8px 8px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.partida > .data > .players_info > .team{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.partida > .data > .players_info > .team > .player{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2px; 
+}
+
+.partida > .data > .players_info > .team > .player > img{
+    width: 16px;
+    height: 16px;
+}
+
+.partida > .data > .players_info > .team > .player > p{
+    margin: 0px 5px 0px 5px;
+    font-size: 0.75rem;
+    color: var(--grey200);
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .partida > .action{
@@ -206,6 +300,24 @@ body{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     width: 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.partida > .action:hover{
+    background-color: var(--black200);
+}
+
+.partida > .action > svg{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.partida > .action > svg > path{
+    fill: var(--black300);
 }
 
 /** BLUE */
@@ -216,10 +328,6 @@ body{
 
 .blue > .data{
     background-color: var(--blue300);
-}
-
-.blue > .action{
-    background-color: var(--blue100);
 }
 
 .blue > .data > .game_info > .type{
@@ -238,7 +346,25 @@ body{
     border-color: var(--blue200); 
 }
 
+.blue > .data > .summoner_info > .summoner > .kda > .k-d-a > .d{
+    color: var(--blue100);
+}
 
+.blue > .data > .players_info{
+    border-left: 1px solid var(--blue200);
+}
+
+.blue > .action{
+    background-color: var(--blue100);
+}
+
+.blue > .action:hover{
+    background-color: var(--blue200);
+}
+
+.blue > .action > svg > path{
+    fill: var(--blue300);
+}
 
 /** RED */
 
@@ -248,10 +374,6 @@ body{
 
 .red > .data{
     background-color: var(--red300);
-}
-
-.red > .action{
-    background-color: var(--red100);
 }
 
 .red > .data > .game_info > .type{
@@ -270,6 +392,26 @@ body{
     border-color: var(--red200); 
 }
 
+.red > .data > .summoner_info > .summoner > .kda > .k-d-a > .d{
+    color: var(--red100);
+}
+
+.red > .data > .players_info{
+    border-left: 1px solid var(--red200);
+}
+
+.red > .action{
+    background-color: var(--red100);
+}
+
+.red > .action:hover{
+    background-color: var(--red200);
+}
+
+.red > .action > svg > path{
+    fill: var(--red300);
+}
+
 /** GREEN */
 
 .green {
@@ -278,10 +420,6 @@ body{
 
 .green > .data{
     background-color: var(--green300);
-}
-
-.green > .action{
-    background-color: var(--green100);
 }
 
 .green > .data > .game_info > .type{
@@ -300,6 +438,26 @@ body{
     border-color: var(--green200); 
 }
 
+.green > .data > .summoner_info > .summoner > .kda > .k-d-a > .d{
+    color: var(--green100);
+}
+
+.green > .data > .players_info{
+    border-left: 1px solid var(--green200);
+}
+
+.green > .action{
+    background-color: var(--green100);
+}
+
+.green > .action:hover{
+    background-color: var(--green200);
+}
+
+.green > .action > svg > path{
+    fill: var(--green300);
+}
+
 /** YELLOW */
 
 .yellow {
@@ -308,10 +466,6 @@ body{
 
 .yellow > .data{
     background-color: var(--yellow300);
-}
-
-.yellow > .action{
-    background-color: var(--yellow100);
 }
 
 .yellow > .data > .game_info > .type{
@@ -330,6 +484,26 @@ body{
     border-color: var(--yellow200); 
 }
 
+.yellow > .data > .summoner_info > .summoner > .kda > .k-d-a > .d{
+    color: var(--yellow100);
+}
+
+.yellow > .data > .players_info{
+    border-left: 1px solid var(--yellow200);
+}
+
+.yellow > .action{
+    background-color: var(--yellow100);
+}
+
+.yellow > .action:hover{
+    background-color: var(--yellow200);
+}
+
+.yellow > .action > svg > path{
+    fill: var(--yellow300);
+}
+
 /** ORANGE */
 
 .orange {
@@ -338,10 +512,6 @@ body{
 
 .orange > .data{
     background-color: var(--orange300);
-}
-
-.orange > .action{
-    background-color: var(--orange100);
 }
 
 .orange > .data > .game_info > .type{
@@ -360,6 +530,26 @@ body{
     border-color: var(--orange200); 
 }
 
+.orange > .data > .summoner_info > .summoner > .kda > .k-d-a > .d{
+    color: var(--orange100);
+}
+
+.orange > .data > .players_info{
+    border-left: 1px solid var(--orange200);
+}
+
+.orange > .action{
+    background-color: var(--orange100);
+}
+
+.orange > .action:hover{
+    background-color: var(--orange200);
+}
+
+.orange > .action > svg > path{
+    fill: var(--orange300);
+}
+
 /** PURPLE */
 
 .purple {
@@ -368,10 +558,6 @@ body{
 
 .purple > .data{
     background-color: var(--purple300);
-}
-
-.purple > .action{
-    background-color: var(--purple100);
 }
 
 .purple > .data > .game_info > .type{
@@ -388,4 +574,24 @@ body{
 .purple > .data > .summoner_info > .summoner > .icons > .runes > img,
 .purple > .data > .summoner_info > .items > img{
     border-color: var(--purple200); 
+}
+
+.purple > .data > .summoner_info > .summoner > .kda > .k-d-a > .d{
+    color: var(--purple100);
+}
+
+.purple > .data > .players_info{
+    border-left: 1px solid var(--purple200);
+}
+
+.purple > .action{
+    background-color: var(--purple100);
+}
+
+.purple > .action:hover{
+    background-color: var(--purple200);
+}
+
+.purple > .action > svg > path{
+    fill: var(--purple300);
 }
