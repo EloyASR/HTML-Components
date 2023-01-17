@@ -1,0 +1,227 @@
+:root {
+    --black100: #7f8082;
+    --black200: #626363;
+    --black300: #343434;
+
+    --blue100: #5383E8;
+    --blue200: #3b66c3;
+    --blue300: #28344E;
+
+    --red100: #E84057;
+    --red200: #c23749;
+    --red300: #59343B;
+
+    --green100:#50d73b;
+    --green200:#37c245;
+    --green300:#365934;
+
+    --yellow100: #e8c940;
+    --yellow200: #c3aa3b;
+    --yellow300: #595234;
+
+    --orange100:#e88c53;
+    --orange200:#c3713b;
+    --orange300:#4e3928;
+
+    --purple100:#b953e8;
+    --purple200:#a13bc3;
+    --purple300:#45284e;
+
+    --grey100: #ffffff;
+    --grey200: #b8b8cf;
+}
+
+body{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+body > div{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content:center;
+    gap: 15px;
+}
+
+.ranked{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 330px;
+    background-color: var(--black200);
+    gap:1px;
+    border-radius: 8px;
+}
+
+.ranked > .header{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    align-content:center;
+    padding: 0px 12px;
+    line-height: 35px;
+    font-size: 14px;
+    color: var(--grey100);
+}
+
+.ranked > .header > .unranked{
+    margin-left:auto;
+    color: var(--black300);
+    font-weight: bold;
+}
+
+.ranked > .content {
+    padding:12px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    border-top: 1px solid var(--black100);
+    background-color: var(--black300);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.ranked > .content > .icon{
+    position: relative;
+}
+
+.ranked > .content > .icon > img{
+    width:72px;
+    height:72px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.ranked > .content > .info{
+    flex:1 1 0%;
+    position: relative;
+    margin-left: 16px;
+}
+
+.ranked > .content > .info > .tier{
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--grey100);
+}
+
+.ranked > .content > .info > .lp{
+    line-height: 16px;
+    margin-top: 2px;
+    font-size: 12px;
+    color: var(--grey200);
+}
+
+.ranked > .content > .rate{
+    font-size:12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color:var(--grey200);
+}
+
+.ranked > .content > .rate > .w-l{
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+.ranked > .content > .rate > .winrate{
+    margin-top: 2px;
+    line-height: 16px;
+}
+
+/* BLUE */
+
+.blue{
+    background-color: var(--blue200);
+}
+
+.blue > .header > .unranked{
+    color: var(--blue300);
+}
+
+.blue > .content {
+    border-top: 1px solid var(--blue100);
+    background-color: var(--blue300);
+}
+
+/* RED */
+
+.red{
+    background-color: var(--red200);
+}
+
+.red > .header > .unranked{
+    color: var(--red300);
+}
+
+.red > .content {
+    border-top: 1px solid var(--red100);
+    background-color: var(--red300);
+}
+
+/* GREEN */
+
+.green{
+    background-color: var(--green200);
+}
+
+.green > .header > .unranked{
+    color: var(--green300);
+}
+
+.green > .content {
+    border-top: 1px solid var(--green100);
+    background-color: var(--green300);
+}
+
+/* YELLOW */
+
+.yellow{
+    background-color: var(--yellow200);
+}
+
+.yellow > .header > .unranked{
+    color: var(--yellow300);
+}
+
+.yellow > .content {
+    border-top: 1px solid var(--yellow100);
+    background-color: var(--yellow300);
+}
+
+/* ORANGE */
+
+.orange{
+    background-color: var(--orange200);
+}
+
+.orange > .header > .unranked{
+    color: var(--orange300);
+}
+
+.orange > .content {
+    border-top: 1px solid var(--orange100);
+    background-color: var(--orange300);
+}
+
+/* PURPLE */
+
+.purple{
+    background-color: var(--purple200);
+}
+
+.purple > .header > .unranked{
+    color: var(--purple300);
+}
+
+.purple > .content {
+    border-top: 1px solid var(--purple100);
+    background-color: var(--purple300);
+}
