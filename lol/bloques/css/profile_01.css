@@ -1,0 +1,337 @@
+.profile{
+    width:100%;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: var(--black200);
+}
+
+.profile > .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 0px 12px;
+    line-height: 35px;
+    font-size: 14px;
+    color: var(--grey100);
+}
+
+.profile > .content{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 5px;
+    background-color: var(--black300);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.profile > .content > .info{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile > .content > .info > .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile > .content > .info > .icon > img{
+    background-color: black;
+    border-radius: 50%;
+    width: 120px;
+    border: 3px solid var(--black100);
+}
+
+.profile > .content > .info > .data{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.profile > .content > .info > .data > .nickname{
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--grey100);
+}
+
+.profile > .content > .info > .data > .lvl{
+    line-height: 16px;
+    margin-top: 2px;
+    font-size: 12px;
+    color: var(--grey200);
+}
+
+.profile > .content > .info > .data > .button{
+    margin-top: 8px;
+}
+
+.profile > .content > .info > .data > .button > .update{
+    padding: 0px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 8px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--black100);
+    background-color: var(--black100);
+    color: var(--grey100);
+}
+
+.profile > .content > .masteries{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile > .content > .masteries > .mastery{ 
+    display:flex;
+    flex-direction: column;
+    margin: 12px;
+    background-color: var(--black100);
+    border-radius:5px;
+    padding: 4px;
+}
+
+.profile > .content > .masteries > .mastery > .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile > .content > .masteries > .mastery > .icon > img{
+    border-radius: 5px;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+}
+
+.profile > .content > .masteries > .mastery > .data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:4px;
+    gap:4px;
+}
+
+.profile > .content > .masteries > .mastery > .data > .lvl{
+    margin-right: auto;
+    color: var(--grey100);
+    font-weight: bold;
+    line-height: 35px;
+    font-size: 20px;
+    padding: 0px 8px;
+    border-radius: 5px;
+    background-color: var(--black300);
+}
+
+.profile > .content > .masteries > .mastery > .data > .points{
+    color: var(--grey200);
+    line-height: 35px;
+    font-size: 12px;
+    padding: 0px 8px;
+    border-radius: 5px;
+    background-color: var(--black300);
+}
+
+/* BLUE */
+
+.blue-profile{
+    background-color: var(--blue200);
+}
+
+.blue-profile > .content{
+    background-color: var(--blue300);
+}
+
+.blue-profile > .content > .info > .data > .button > .update{
+    border: 1px solid var(--blue100);
+    background-color: var(--blue100);
+}
+
+.blue-profile > .content > .info > .icon > img{
+    border: 3px solid var(--blue100);
+}
+
+.blue-profile > .content > .masteries > .mastery{ 
+    background-color: var(--blue100);
+}
+
+.blue-profile > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--blue300);
+}
+
+.blue-profile > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--blue300);
+}
+
+/* RED */
+
+.red-profile{
+    background-color: var(--red200);
+}
+
+.red-profile > .content{
+    background-color: var(--red300);
+}
+
+.red-profile > .content > .info > .data > .button > .update{
+    border: 1px solid var(--red100);
+    background-color: var(--red100);
+}
+
+.red-profile > .content > .info > .icon > img{
+    border: 3px solid var(--red100);
+}
+
+.red-profile > .content > .masteries > .mastery{ 
+    background-color: var(--red100);
+}
+
+.red-profile > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--red300);
+}
+
+.red-profile > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--red300);
+}
+
+/* GREEN */
+
+.green-profile{
+    background-color: var(--green200);
+}
+
+.green-profile > .content{
+    background-color: var(--green300);
+}
+
+.green-profile > .content > .info > .data > .button > .update{
+    border: 1px solid var(--green100);
+    background-color: var(--green100);
+}
+
+.green-profile > .content > .info > .icon > img{
+    border: 3px solid var(--green100);
+}
+
+.green-profile > .content > .masteries > .mastery{ 
+    background-color: var(--green100);
+}
+
+.green-profile > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--green300);
+}
+
+.green-profile > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--green300);
+}
+
+/* YELLOW */
+
+.yellow-profile{
+    background-color: var(--yellow200);
+}
+
+.yellow-profile > .content{
+    background-color: var(--yellow300);
+}
+
+.yellow-profile > .content > .info > .data > .button > .update{
+    border: 1px solid var(--yellow100);
+    background-color: var(--yellow100);
+}
+
+.yellow-profile > .content > .info > .icon > img{
+    border: 3px solid var(--yellow100);
+}
+
+.yellow-profile > .content > .masteries > .mastery{ 
+    background-color: var(--yellow100);
+}
+
+.yellow-profile > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--yellow300);
+}
+
+.yellow-profile > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--yellow300);
+}
+
+/* ORANGE */
+
+.orange-profile{
+    background-color: var(--orange200);
+}
+
+.orange-profile > .content{
+    background-color: var(--orange300);
+}
+
+.orange-profile > .content > .info > .data > .button > .update{
+    border: 1px solid var(--orange100);
+    background-color: var(--orange100);
+}
+
+.orange-profile > .content > .info > .icon > img{
+    border: 3px solid var(--orange100);
+}
+
+.orange-profile > .content > .masteries > .mastery{ 
+    background-color: var(--orange100);
+}
+
+.orange-profile > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--orange300);
+}
+
+.orange-profile > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--orange300);
+}
+
+/* PURPLE */
+
+.purple-profile{
+    background-color: var(--purple200);
+}
+
+.purple-profile > .content{
+    background-color: var(--purple300);
+}
+
+.purple-profile > .content > .info > .data > .button > .update{
+    border: 1px solid var(--purple100);
+    background-color: var(--purple100);
+}
+
+.purple-profile > .content > .info > .icon > img{
+    border: 3px solid var(--purple100);
+}
+
+.purple-profile > .content > .masteries > .mastery{ 
+    background-color: var(--purple100);
+}
+
+.purple-profile > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--purple300);
+}
+
+.purple-profile > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--purple300);
+}

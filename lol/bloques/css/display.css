@@ -1,0 +1,70 @@
+:root {
+    --black100: #7f8082;
+    --black200: #626363;
+    --black300: #343434;
+
+    --blue100: #5383E8;
+    --blue200: #3b66c3;
+    --blue300: #28344E;
+
+    --red100: #E84057;
+    --red200: #c23749;
+    --red300: #59343B;
+
+    --green100:#50d73b;
+    --green200:#37c245;
+    --green300:#365934;
+
+    --yellow100: #e8c940;
+    --yellow200: #c3aa3b;
+    --yellow300: #595234;
+
+    --orange100:#e88c53;
+    --orange200:#c3713b;
+    --orange300:#4e3928;
+
+    --purple100:#b953e8;
+    --purple200:#a13bc3;
+    --purple300:#45284e;
+
+    --grey100: #ffffff;
+    --grey200: #b8b8cf;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #201c1c;
+}
+
+body > .contenido{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+body > .contenido > .cuerpo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+body > .contenido > .cuerpo > .lateral{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+body > .contenido > .cuerpo > .centro{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+
+

@@ -1,0 +1,379 @@
+:root {
+    --black100: #7f8082;
+    --black200: #626363;
+    --black300: #343434;
+
+    --blue100: #5383E8;
+    --blue200: #3b66c3;
+    --blue300: #28344E;
+
+    --red100: #E84057;
+    --red200: #c23749;
+    --red300: #59343B;
+
+    --green100:#50d73b;
+    --green200:#37c245;
+    --green300:#365934;
+
+    --yellow100: #e8c940;
+    --yellow200: #c3aa3b;
+    --yellow300: #595234;
+
+    --orange100:#e88c53;
+    --orange200:#c3713b;
+    --orange300:#4e3928;
+
+    --purple100:#b953e8;
+    --purple200:#a13bc3;
+    --purple300:#45284e;
+
+    --grey100: #ffffff;
+    --grey200: #b8b8cf;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.profile{
+    width:100%;
+    display: flex;
+    max-width: 900px;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: var(--black200);
+}
+
+.profile > .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 0px 12px;
+    line-height: 35px;
+    font-size: 14px;
+    color: var(--grey100);
+}
+
+.profile > .content{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 5px;
+    background-color: var(--black300);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.profile > .content > .info{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile > .content > .info > .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile > .content > .info > .icon > img{
+    background-color: black;
+    border-radius: 50%;
+    width: 120px;
+    border: 3px solid var(--black100);
+}
+
+.profile > .content > .info > .data{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.profile > .content > .info > .data > .nickname{
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--grey100);
+}
+
+.profile > .content > .info > .data > .lvl{
+    line-height: 16px;
+    margin-top: 2px;
+    font-size: 12px;
+    color: var(--grey200);
+}
+
+.profile > .content > .info > .data > .button{
+    margin-top: 8px;
+}
+
+.profile > .content > .info > .data > .button > .update{
+    padding: 0px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 8px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--black100);
+    background-color: var(--black100);
+    color: var(--grey100);
+}
+
+.profile > .content > .masteries{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile > .content > .masteries > .mastery{ 
+    display:flex;
+    flex-direction: column;
+    margin: 12px;
+    background-color: var(--black100);
+    border-radius:5px;
+    padding: 4px;
+}
+
+.profile > .content > .masteries > .mastery > .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile > .content > .masteries > .mastery > .icon > img{
+    border-radius: 5px;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+}
+
+.profile > .content > .masteries > .mastery > .data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:4px;
+    gap:4px;
+}
+
+.profile > .content > .masteries > .mastery > .data > .lvl{
+    margin-right: auto;
+    color: var(--grey100);
+    font-weight: bold;
+    line-height: 35px;
+    font-size: 20px;
+    padding: 0px 8px;
+    border-radius: 5px;
+    background-color: var(--black300);
+}
+
+.profile > .content > .masteries > .mastery > .data > .points{
+    color: var(--grey200);
+    line-height: 35px;
+    font-size: 12px;
+    padding: 0px 8px;
+    border-radius: 5px;
+    background-color: var(--black300);
+}
+
+/* BLUE */
+
+.blue{
+    background-color: var(--blue200);
+}
+
+.blue > .content{
+    background-color: var(--blue300);
+}
+
+.blue > .content > .info > .data > .button > .update{
+    border: 1px solid var(--blue100);
+    background-color: var(--blue100);
+}
+
+.blue > .content > .info > .icon > img{
+    border: 3px solid var(--blue100);
+}
+
+.blue > .content > .masteries > .mastery{ 
+    background-color: var(--blue100);
+}
+
+.blue > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--blue300);
+}
+
+.blue > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--blue300);
+}
+
+/* RED */
+
+.red{
+    background-color: var(--red200);
+}
+
+.red > .content{
+    background-color: var(--red300);
+}
+
+.red > .content > .info > .data > .button > .update{
+    border: 1px solid var(--red100);
+    background-color: var(--red100);
+}
+
+.red > .content > .info > .icon > img{
+    border: 3px solid var(--red100);
+}
+
+.red > .content > .masteries > .mastery{ 
+    background-color: var(--red100);
+}
+
+.red > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--red300);
+}
+
+.red > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--red300);
+}
+
+/* GREEN */
+
+.green{
+    background-color: var(--green200);
+}
+
+.green > .content{
+    background-color: var(--green300);
+}
+
+.green > .content > .info > .data > .button > .update{
+    border: 1px solid var(--green100);
+    background-color: var(--green100);
+}
+
+.green > .content > .info > .icon > img{
+    border: 3px solid var(--green100);
+}
+
+.green > .content > .masteries > .mastery{ 
+    background-color: var(--green100);
+}
+
+.green > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--green300);
+}
+
+.green > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--green300);
+}
+
+/* YELLOW */
+
+.yellow{
+    background-color: var(--yellow200);
+}
+
+.yellow > .content{
+    background-color: var(--yellow300);
+}
+
+.yellow > .content > .info > .data > .button > .update{
+    border: 1px solid var(--yellow100);
+    background-color: var(--yellow100);
+}
+
+.yellow > .content > .info > .icon > img{
+    border: 3px solid var(--yellow100);
+}
+
+.yellow > .content > .masteries > .mastery{ 
+    background-color: var(--yellow100);
+}
+
+.yellow > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--yellow300);
+}
+
+.yellow > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--yellow300);
+}
+
+/* ORANGE */
+
+.orange{
+    background-color: var(--orange200);
+}
+
+.orange > .content{
+    background-color: var(--orange300);
+}
+
+.orange > .content > .info > .data > .button > .update{
+    border: 1px solid var(--orange100);
+    background-color: var(--orange100);
+}
+
+.orange > .content > .info > .icon > img{
+    border: 3px solid var(--orange100);
+}
+
+.orange > .content > .masteries > .mastery{ 
+    background-color: var(--orange100);
+}
+
+.orange > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--orange300);
+}
+
+.orange > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--orange300);
+}
+
+/* PURPLE */
+
+.purple{
+    background-color: var(--purple200);
+}
+
+.purple > .content{
+    background-color: var(--purple300);
+}
+
+.purple > .content > .info > .data > .button > .update{
+    border: 1px solid var(--purple100);
+    background-color: var(--purple100);
+}
+
+.purple > .content > .info > .icon > img{
+    border: 3px solid var(--purple100);
+}
+
+.purple > .content > .masteries > .mastery{ 
+    background-color: var(--purple100);
+}
+
+.purple > .content > .masteries > .mastery > .data > .lvl{
+    background-color: var(--purple300);
+}
+
+.purple > .content > .masteries > .mastery > .data > .points{
+    background-color: var(--purple300);
+}
